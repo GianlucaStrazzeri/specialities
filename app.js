@@ -1,14 +1,19 @@
-const {usersdata}=require("./userdata.js");
+const {usersdata,
+     marketing,
+    ventas,
+    developers,
+    qAs}=require("./userdata.js");
 const express=require("express");
 const app=express();
 
 app.get("/",(req,res)=>{
 res.send(`<h1>Hola esta es la pagina de la home</h1>
+<a href="/"> Home</a>
 <a href="/marketing">Marketing </a>
 <a href="/developer">Developer </a>
 <a href="/marketing"> marketing </a>
 <a href="/qAs"> qAs </a>
-<a href="/e404"> Al darle click aparecerá un error 404 ya que esta pagina no existe </a>
+<a href="/e404"> Error 404  </a>
 
 `)
 console.log(req.path);
@@ -20,7 +25,7 @@ app.get("/marketing",(req,res)=>{
     <a href="/developer"> Developer </a>
     <a href="/marketing"> marketing </a>
     <a href="/qAs"> qAs </a>
-    
+    <p> ${marketing}</p>
     `)
     console.log(req.path);
 })
@@ -31,7 +36,7 @@ app.get("/ventas",(req,res)=>{
     <a href="/developer"> Developer </a>
     <a href="/marketing"> marketing </a>
     <a href="/qAs"> qAs </a>
-    
+    <p> ${ventas}</p>
     `)
     console.log(req.path);
 })
@@ -42,7 +47,7 @@ app.get("/qAs",(req,res)=>{
     <a href="/developer"> Developer </a>
     <a href="/developer"> Developer </a>
     <a href="/developer"> Developer </a>
-    
+    <p> ${qAs}</p>
     `)
     console.log(req.path);
 })
@@ -53,6 +58,7 @@ app.get("/developer",(req,res)=>{
     <a href="/marketing"> Marketing</a>
     <a href="/marketing"> marketing </a>
     <a href="/qAs"> qAs </a>
+    <p> ${developers}</p>
     `)
     console.log(req.path);
 })

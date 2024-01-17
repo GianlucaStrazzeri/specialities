@@ -64,10 +64,10 @@ usersData.forEach(user =>{
   }
 })
 
-console.log(marketing);
-console.log(ventas);
-console.log(developers);
-console.log(qAs);
+//console.log(marketing);
+//console.log(ventas);
+//console.log(developers);
+//console.log(qAs);
 
   module.exports={
     marketing,
