@@ -40,11 +40,40 @@ const usersData = [
 
 
 
-console.log(usersData);
+usersData.forEach(user =>{
+  if(user.specialty== "marketing"){
+      marketing.push(user)
+  }
+})
 
+usersData.forEach(user =>{
+  if(user.specialty== "ventas"){
+      ventas.push(user)
+  }
+})
+
+usersData.forEach(user =>{
+  if(user.specialty== "developers"){
+      developers.push(user)
+  }
+})
+
+usersData.forEach(user =>{
+  if(user.specialty== "QAs"){
+    qAs.push(user)
+  }
+})
+
+console.log(marketing);
+console.log(ventas);
+console.log(developers);
+console.log(qAs);
 
   module.exports={
-    usersData
+    marketing,
+    ventas,
+    developers,
+    qAs
   };
 
   

@@ -6,7 +6,10 @@ app.get("/",(req,res)=>{
 res.send(`<h1>Hola esta es la pagina de la home</h1>
 <a href="/marketing">Marketing </a>
 <a href="/developer">Developer </a>
+<a href="/marketing"> marketing </a>
+<a href="/qAs"> qAs </a>
 <a href="/e404"> Al darle click aparecerá un error 404 ya que esta pagina no existe </a>
+
 `)
 console.log(req.path);
 });
@@ -14,6 +17,30 @@ console.log(req.path);
 app.get("/marketing",(req,res)=>{
     res.send(`<h1>Hola esta es la pagina de Marketing</h1>
     <a href="/"> Home</a>
+    <a href="/developer"> Developer </a>
+    <a href="/marketing"> marketing </a>
+    <a href="/qAs"> qAs </a>
+    
+    `)
+    console.log(req.path);
+})
+
+app.get("/ventas",(req,res)=>{
+    res.send(`<h1>Hola esta es la pagina de ventas</h1>
+    <a href="/"> Home</a>
+    <a href="/developer"> Developer </a>
+    <a href="/marketing"> marketing </a>
+    <a href="/qAs"> qAs </a>
+    
+    `)
+    console.log(req.path);
+})
+
+app.get("/qAs",(req,res)=>{
+    res.send(`<h1>Hola esta es la pagina de QAs</h1>
+    <a href="/"> Home</a>
+    <a href="/developer"> Developer </a>
+    <a href="/developer"> Developer </a>
     <a href="/developer"> Developer </a>
     
     `)
@@ -24,6 +51,8 @@ app.get("/developer",(req,res)=>{
     res.send(`<h1>Hola esta es la pagina de developers</h1>
     <a href="/"> Home</a>
     <a href="/marketing"> Marketing</a>
+    <a href="/marketing"> marketing </a>
+    <a href="/qAs"> qAs </a>
     `)
     console.log(req.path);
 })
