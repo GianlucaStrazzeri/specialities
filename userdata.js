@@ -30,3 +30,21 @@ const usersData = [
     { id: 29, name: 'Cynthia', age: 32, specialty: 'ventas' },
     { id: 30, name: 'Derek', age: 30, specialty: 'marketing' },
   ];
+
+
+
+  let marketing=[];
+  let ventas=[];
+  let developers=[];
+  let qAs=[];
+
+
+
+console.log(usersData);
+
+
+  module.exports={
+    usersData
+  };
+
+  

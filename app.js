@@ -1,3 +1,4 @@
+const {usersdata}=require("./userdata.js");
 const express=require("express");
 const app=express();
 
@@ -42,8 +43,4 @@ app.listen(3000,()=>{
 
 
 
-//De momento me permite entrar y circular entre las siguientes paginas además se ha añadido
-// un manejo de error 404
-// http://localhost:3000/ 
-//http:localhost:3000/marketing
-//http:localhost:3000/developer
+console.log(usersdata);
