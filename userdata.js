@@ -31,49 +31,33 @@ const usersData = [
     { id: 30, name: 'Derek', age: 30, specialty: 'marketing' },
   ];
 
-
-
   let marketing=[];
   let ventas=[];
   let developers=[];
   let qAs=[];
-
-
-
 usersData.forEach(user =>{
   if(user.specialty== "marketing"){
       marketing.push(user)
   }
 })
-
 usersData.forEach(user =>{
   if(user.specialty== "ventas"){
       ventas.push(user)
   }
 })
-
 usersData.forEach(user =>{
   if(user.specialty== "developers"){
       developers.push(user)
   }
 })
-
 usersData.forEach(user =>{
   if(user.specialty== "QAs"){
     qAs.push(user)
   }
 })
 
-//console.log(marketing);
-//console.log(ventas);
-//console.log(developers);
-//console.log(qAs);
-
-  module.exports={
-    marketing,
-    ventas,
-    developers,
-    qAs
-  };
+console.log(marketing);
+const mappedMarketers=marketing.map(marketing=> marketing);
+  module.exports={ marketing, ventas,developers,qAs,mappedMarketers };
 
   
